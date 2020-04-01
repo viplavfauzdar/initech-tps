@@ -1,4 +1,4 @@
-package com.webverge.projectone.config;
+package com.initech.tps.config;
 
 
 import org.springframework.context.annotation.Bean;
