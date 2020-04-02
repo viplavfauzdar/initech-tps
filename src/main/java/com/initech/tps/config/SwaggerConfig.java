@@ -24,7 +24,7 @@ public class SwaggerConfig {
                 .apis(RequestHandlerSelectors.any())
                 .paths(PathSelectors.any())
                 .paths(Predicates.not(PathSelectors.regex("/error")))
-                .paths(Predicates.not(PathSelectors.regex("/forward")))
+                .paths(Predicates.not(PathSelectors.regex("/ forward")))
                 .build();
     }
 

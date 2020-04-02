@@ -27,7 +27,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
 	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
-	implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.12'
+	compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.12'
+	annotationProcessor 'org.projectlombok:lombok:1.18.12'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 	testCompile('junit:junit')
@@ -38,4 +39,8 @@ dependencies {
 
 test {
 	useJUnitPlatform()
+	testLogging {
+		events "passed", "skipped", "failed", "standardOut", "standardError"
+	}
+	dependsOn 'cleanTest'
 }
