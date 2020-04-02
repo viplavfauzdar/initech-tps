@@ -24,7 +24,7 @@ public class MaskController {
         if(phonenumber.contains("-"))
             return phoneNumberMaskService.maskPhoneNumberWithDashes(phonenumber);
         else if(phonenumber.contains("."))
-            return phoneNumberMaskService.maskPhoneNumberWithPeriod(phonenumber);
+            return phoneNumberMaskService.maskPhoneNumberWithPeriods(phonenumber);
         else
             return phoneNumberMaskService.maskPhoneNumberWithTenDigits(phonenumber);
     }

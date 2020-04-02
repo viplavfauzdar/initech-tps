@@ -33,7 +33,7 @@ public class PhoneNumberMaskService {
      * @param - Phone Number with dashes
      * @return - Masked phone number e.g. 678.XXX.1212
      * */
-    public String maskPhoneNumberWithPeriod(String phoneNumber){
+    public String maskPhoneNumberWithPeriods(String phoneNumber){
         //remove any leading or trailing spaces
         phoneNumber = phoneNumber.trim();
         String[] phoneNumberSplit = phoneNumber.split("\\.");
