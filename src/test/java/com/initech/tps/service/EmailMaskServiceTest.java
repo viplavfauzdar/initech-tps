@@ -12,7 +12,7 @@ public class EmailMaskServiceTest extends InitechTpsApplicationTests {
     EmailMaskService emailMaskService;
 
     @Test
-    public void TestMaskPhoneNumberWithDashes(){
+    public void maskEmailTest(){
         assertEquals("vXXXF@gmail.com",emailMaskService.maskEmailId("viplavF@gmail.com"));
     }
 

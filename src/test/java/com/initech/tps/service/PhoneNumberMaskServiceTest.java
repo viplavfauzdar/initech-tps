@@ -11,17 +11,17 @@ public class PhoneNumberMaskServiceTest extends InitechTpsApplicationTests {
     PhoneNumberMaskService phoneNumberMaskService;
 
     @Test
-    public void TestMaskPhoneNumberWithDashes(){
+    public void maskPhoneNumberWithDashesTest(){
         assertEquals("678-XXX-1212",phoneNumberMaskService.maskPhoneNumberWithDashes("678-221-1212"));
     }
 
     @Test
-    public void TestMaskPhoneNumberWithPeriods(){
+    public void maskPhoneNumberWithPeriodsTest(){
         assertEquals("678.XXX.1212",phoneNumberMaskService.maskPhoneNumberWithPeriods("678.221.1212"));
     }
 
     @Test
-    public void TestMaskPhoneNumberWithTenDigits(){
+    public void maskPhoneNumberWithTenDigitsTest(){
         assertEquals("678XXX1212",phoneNumberMaskService.maskPhoneNumberWithTenDigits("6782211212"));
     }
 
