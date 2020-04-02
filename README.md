@@ -1,4 +1,4 @@
-# Initech Tps Reports
+# Initech TPS Reports
 ## THD code test
 An `Office Space `experience. :)
 
